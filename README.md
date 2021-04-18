@@ -1,2 +1,2 @@
 # Data-structure 
-All programm
+All program
