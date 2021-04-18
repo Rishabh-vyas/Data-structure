@@ -31,7 +31,7 @@ int main()
 {
 	int arr[50]={2,3,4,5,6,7,8};
 	int size=7;
-	int index=5;
+	int index=3;
 	int capacity=50;
 	
 	int value=100;
@@ -39,10 +39,20 @@ int main()
 	display(arr,size);
 	
 	insertElement(arr,size,index,capacity,value);
+	
+	int chechValue=insertElement(arr,size,index,capacity,value);
+	if(chechValue==-1){
+	
+		printf("Failed to add value");
+	}
+	else{
+	
 		
+		display(arr,size);
+		printf("Value added !");		
+	}
 	
-	display(arr,size);
 	
-	return 1;
+	return 1;	
 	
 }
